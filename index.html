@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://lh4.googleusercontent.com/DzysRhXLizF-wcDRNq1oUl7O_a1BfIwo5lJBh2RcM8u8h9omGkrqO2xxMVO85rp2v3Q=w2400">
+    <title>Josh C.</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="Logo.JPG"/>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects/Experiences</a></li>
+            </ul>
+
+            <a href="https://drive.google.com/uc?id=1K80q1uXvpnG44MLfooa4zxvBwbObPtkQ&export=download" class="downloadBtn">DOWNLOAD CV</a>
+            <div class="toggleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- DROPDOWN MENU -->
+        <div class="dropDownMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects/Experiences</a></li>
+            <li><a href="https://drive.google.com/uc?id=1K80q1uXvpnG44MLfooa4zxvBwbObPtkQ&export=download" class="downloadBtn">DOWNLOAD CV</a></li>
+        </div>
+
+    </header>
+
+    <div class="mainContainer">
+        <div class="helloContainer">
+            <h1 class="hello">Hello, I'm</h1>
+            <h1 class="name">Josh</h1>
+            <h1 class="course">Information Technology</h1>
+            <h1 class="welcome">Welcome to my Profile Website</h1>
+            <div class="knowMoreContainer">
+                <a href="#about" class="knowMore">KNOW MORE ABOUT ME 
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>   
+            
+            <img src="Memoji.jpg"/>
+        </div>  
+    </div>
+
+    <br><br><br>
+    <hr>
+
+    <div class="aboutMe" id="about">
+        <section class="childImg">
+            <img src="Avatar.jpg"/>
+        </section>
+        <section class="child">
+            <h1 class="aboutTitle">About Me</h1>
+            <h1 class="workTitle">Associate Software Engineer</h1>
+            <p>
+                I have a degree in Information Technology specialized in Web and Mobile Development, which provided me  with knowledge and expertise in Developing Mobile and Web Applications, logical, problem solving, and critical thinking skills.
+                <br><br>
+                I had the opportunity to intern at Accenture where I learned a lot about web development. During my internship, I was able to work on both backend and frontend side of the project which allowed me to gain hands-on experience and develop my skills. Overall, the experience was very valuable and I am excited to continue building on what I learned during my internship.
+            </p>
+            <a href="projects.html" class="seeWorks">
+                <i class="fa-solid fa-hand-point-right"></i>
+                SEE MY WORKS & EXPERIENCE
+            </a><p style="margin-bottom: 19px;">
+                <br>
+            <a href="blog.html" class="seeWorks">
+                <i class="fa-solid fa-hand-point-right"></i>
+                CHECK OUT MY BLOG
+            </a>
+            <h1 class="inTouch">Let's keep in touch:
+                <p class="email">joshcruz2028@gmail.com</p>
+                <a 
+                href="https://www.linkedin.com/in/josh-cruz-06531723a/"
+                target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                href="https://github.com/Kitchen-Nuggets"
+                target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </h1>
+        </section>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggleBtn');
+        const toggleBtnIcon = document.querySelector('.toggleBtn i');
+        const dropDownMenu = document.querySelector('.dropDownMenu');
+        
+        toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')  
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
