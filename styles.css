@@ -454,6 +454,14 @@ header {
   background-color: white;
 }
 
+.black-inventory-container {
+  text-align: center;
+}
+
+.black-inventory-container h3{
+  margin-bottom: 5px;
+}
+
 /* BUNDLE */
 
 .bundle-deals {
@@ -462,6 +470,40 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   padding-bottom: 5%;
+}
+
+.black-inventory {
+  margin-top: 80px;
+  background: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.black-inventory hr{
+  margin-bottom: -15px;
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: black;
+}
+
+.black-inventory h1{
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.black-inventory h1{
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .bundle-deals hr{
@@ -481,6 +523,7 @@ header {
   text-align: center;
   margin-bottom: 15px;
 }
+
 table{
   width:100%;
   table-layout: fixed;
@@ -718,8 +761,28 @@ td{
   font-size: 20px;
 }
 
+.open-black-inventory {
+  background-color: #DAD2BD;
+  color: #2D3134;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.open-black-inventory:hover  {
+  transition: 0.8s;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
 /* RESPONSIVENESS */
 @media (max-width: 1280px) {
+
+  .open-black-inventory {
+    font-size: 15px;
+  }
 
   .bundle-deals img {
     width: 300px;
@@ -743,7 +806,7 @@ td{
     text-align: center;
     font-size: 25px;
     margin-bottom: -15px;
-    margin-top: 35px;
+    margin-top: 45px;
   }
   
   .work-experience h4{
@@ -853,6 +916,10 @@ td{
 }
 
 @media (max-width: 870px) {
+
+  .open-black-inventory {
+    font-size: 12px;
+  }
 
   .bundle-deals img {
     width: 170px;
