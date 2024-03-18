@@ -65,8 +65,8 @@ header {
 }
 
 .navbar img{
+  margin-top: 70px;
   width: 200px;
-  border-radius: 10px;
   height: auto;
 }
 
@@ -275,7 +275,7 @@ header {
 
 .seeWorks {
   transition: 0.5s;
-  background-color: #2D3134;
+  background-color: black;
   color: white;
   padding: 0.5rem 1rem;
   outline: none;
@@ -290,8 +290,8 @@ header {
 .seeWorks:hover {
   transition: 0.5s;
   background-color: transparent;
-  border: 1px #2D3134 solid;
-  color: #2D3134;
+  border: 1px black solid;
+  color: black;
   padding: 0.5rem 1rem;
   outline: none;
   border-radius: 20px;
@@ -355,16 +355,16 @@ header {
 }
 
 .flex-container h1 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .flex-container p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .flex-item {
   box-shadow: 5px 5px 10px gray;
-  max-width: 500px;
+  max-width: 300px;
   background-color: #f1f1f1;
   padding: 10px;
   flex: 30%;
@@ -416,9 +416,11 @@ header {
 }
 
 .technologies img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 7.5px;
-  width: 30px;
-  margin-right: 2px;
+  width: 55%;
 }
 
 .technologies h2 {
@@ -705,9 +707,9 @@ header {
   }
 
   .navbar img{
+    margin-top: 30px;
     margin-left: -15px;
     width: 150px;
-    border-radius: 10px;
     height: auto;
   }
 
