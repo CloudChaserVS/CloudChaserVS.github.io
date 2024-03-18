@@ -419,8 +419,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 7.5px;
-  width: 55%;
+  width: 200px;
 }
 
 .technologies h2 {
@@ -582,8 +581,10 @@ header {
   }
 
   .technologies img {
-    width: 25px;
-    margin-right: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
   }
   
   .technologies h2 {
@@ -612,11 +613,11 @@ header {
   }
 
   .flex-item h1{
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .flex-item p, .flex-item a, .flex-item li {
-    font-size: 12.5px;
+    font-size: 10px;
   }
 
   .seeWorks {
@@ -657,8 +658,10 @@ header {
   }
 
   .technologies img {
-    width: 20px;
-    margin-right: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
   }
   
   .technologies h2 {
