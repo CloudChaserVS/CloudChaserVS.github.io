@@ -79,13 +79,14 @@ header {
 }
 
 .downloadBtn {
+  margin-top: 25px;
   transition: 0.5s;
   background-color: #1877F2;
   color: white;
   padding: 0.5rem 1rem; 
   outline: none;
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
   padding-top: 15px;
@@ -102,7 +103,7 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -452,6 +453,7 @@ header {
   background: linear-gradient(to right, #25c481, #25b7c4);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .bundle-deals hr{
@@ -479,11 +481,11 @@ table{
   background-color: rgba(255,255,255,0.3);
  }
 .tbl-content{
-  height:300px;
   overflow-x:auto;
   margin-top: 0px;
   border: 2px solid rgba(255,255,255,0.3);
 }
+
 th{
   padding: 20px 15px;
   text-align: left;
@@ -492,6 +494,7 @@ th{
   color: #fff;
   text-transform: uppercase;
 }
+
 td{
   padding: 15px;
   text-align: left;
@@ -499,7 +502,7 @@ td{
   font-weight: 300;
   font-size: 15px;
   color: #fff;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
+  border-bottom: solid 2px rgba(255,255,255,0.1);
 }
 
 .bundle-deals section{
@@ -709,6 +712,22 @@ td{
 /* RESPONSIVENESS */
 @media (max-width: 1280px) {
 
+  .bundle-deals img {
+    width: 300px;
+  }
+
+  .bundle-deals h1 {
+    font-size: 20px;
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
   .work-experience h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -825,6 +844,27 @@ td{
 }
 
 @media (max-width: 870px) {
+
+  .bundle-deals img {
+    width: 170px;
+  }
+
+  .bundle-deals hr {
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+
+  .bundle-deals h1 {
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 10px;
+  }
 
   .work-experience h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
