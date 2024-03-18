@@ -501,6 +501,7 @@ th{
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 2px 2px #ff0000;
 }
 
 td{
@@ -511,6 +512,7 @@ td{
   font-size: 16.5px;
   color: #fff;
   border-bottom: solid 2px rgba(255,255,255,0.1);
+  text-shadow: 2px 2px #ff0000;
 }
 
 .bundle-deals section{
