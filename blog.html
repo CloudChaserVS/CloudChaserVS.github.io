@@ -32,26 +32,25 @@
         </div>
     </header>
 
-    <div class="timeline">
-        <div class="timelineContainer leftCont">
-            <div class="timelineContent">
-                <h2 class="timelineTitle">The beginning of my Journey into the World of Technology</h2>
-                <p class="timeLineYear">2016 - 2018</p><br><br>
-                <img class="timelinePhoto" src="https://st4.depositphotos.com/12536728/41049/i/450/depositphotos_410494430-stock-photo-young-professional-programmer-working-developing.jpg"/>
-                <p class="timelineDesc">During my high school, I started developing a strong interest in computers. I remember spending hours tinkering with my first laptop, learning how to code, what does coding means, why are there different programming languages, and what does programming languages do. It wasn't long before I was hooked, and I started to explore the many different areas of computing, from programming languages to hardware and networking. Looking back, I'm grateful for those early days and the foundation they provided for my later studies and career in the tech industry</p>
-            </div>
+    <!-- SLIDE SHOW -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="cover.jpg" style="width:100%">
         </div>
 
-        <div class="timelineContainer rightCont">
-            <div class="timelineContent">
-                <h2 class="timelineTitle">Passing the Entrance Exam: Pursuing My Passion</h2>
-                <p class="timeLineYear">2018</p><br><br>
-                <img class="timelinePhoto" src="https://www.bulakenyo.ph/wp-content/uploads/2021/08/parallax-bg2.jpg"/>
-                <p class="timelineDesc">On this day, I finally received the results of my entrance exam for the information technology course. My heart raced as I nervously opened the email. As I read the words "Congratulations, you have been accepted into the program," a wave of relief and excitement washed over me. I had been determined to learn more deeply, and now I had the opportunity to do just that. I couldn't wait to dive into my studies and see where this new journey would take me.</p>
-            </div>
+        <div class="mySlides fade">
+          <img src="cover2.jpg" style="width:100%">
         </div>
-    </div>
 
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+      </div>
+    <!-- SLIDE SHOW END -->
 
     <script>
         const toggleBtn = document.querySelector('.toggleBtn');
@@ -65,6 +64,45 @@
         toggleBtnIcon.classList = isOpen
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
+        }
+
+        let slideIndex = 0;
+        let timeoutId = null;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        showSlides();
+        function currentSlide(index) {
+            slideIndex = index;
+            showSlides();
+        }
+        function plusSlides(step) {
+            
+            if(step < 0) {
+                slideIndex -= 2;
+                
+                if(slideIndex < 0) {
+                slideIndex = slides.length - 1;
+                }
+            }
+            
+            showSlides();
+        }
+        function showSlides() {
+            for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+            }
+            slideIndex++;
+            if(slideIndex > slides.length) {
+            slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add('active');
+            if(timeoutId) {
+                clearTimeout(timeoutId);
+            }
+            timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
     </script>
 </body>
