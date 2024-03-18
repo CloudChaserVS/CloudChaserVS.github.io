@@ -997,12 +997,13 @@ td{
   }
 
   .mainContainer .hello {
-    font-size: 25px;
+    padding-top: 5px;
+    font-size: 17px;
   }
 
   .mainContainer .name {
-    font-size: 90px;
-    margin-bottom: 100px;
+    margin-top: 75px;
+    font-size: 70px;
   }
 
   .mainContainer .course {
