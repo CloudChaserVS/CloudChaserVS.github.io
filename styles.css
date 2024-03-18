@@ -93,6 +93,14 @@ header {
   padding-bottom: 15px;
 }
 
+.red-text {
+  color: #ff1a1f;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
 .downloadBtn:hover {
   transition: 0.5s;
   background-color: transparent;
@@ -500,7 +508,7 @@ td{
   text-align: left;
   vertical-align:middle;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16.5px;
   color: #fff;
   border-bottom: solid 2px rgba(255,255,255,0.1);
 }
