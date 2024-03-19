@@ -66,8 +66,10 @@ header {
 }
 
 .navbar img{
-  margin-top: 70px;
-  width: 200px;
+  margin-top: 60px;
+  margin-left: -10px;
+  margin-right: 110px;
+  width: 100px;
   height: auto;
 }
 
@@ -205,10 +207,8 @@ header {
 
 .aboutMe {
   margin-top: 17.5%;
-  background: whitesmoke;
+  background: linear-gradient(to right, #ffffff 0%, #DAD2BD 100%);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 10px;
-  background: white;
   height: 100%;
 }
 
@@ -493,6 +493,36 @@ header {
 }
 
 .bundle-deals hr{
+  margin-top: 70px;
+  margin-bottom: -15px;
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+}
+
+.return-policy {
+  text-align: center;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.return-policy hr{
+  margin-top: 70px;
+  margin-bottom: -15px;
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+}
+
+.instruction-container {
+  text-align: center;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.instruction-container hr{
   margin-top: 70px;
   margin-bottom: -15px;
   display: block;
@@ -866,8 +896,8 @@ td{
     padding-top: 13px;
     padding-bottom: 13px;
     font-size: 15px;
-    background-color: #2D3134;
-    color: whitesmoke;
+    background-color: black;
+    color: white;
   }
 
   .seeWorks:hover {
@@ -876,8 +906,8 @@ td{
     margin-left: 15px;
     transition: 0.5s;
     background-color: transparent;
-    border: 1px #2D3134 solid;
-    color: #2D3134;
+    border: 1px black solid;
+    color: black;
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
@@ -1028,7 +1058,7 @@ td{
   .navbar img{
     margin-top: 30px;
     margin-left: -15px;
-    width: 150px;
+    width:60px;
     height: auto;
   }
 
@@ -1038,7 +1068,7 @@ td{
   }
 
   .aboutMe {
-    background-color: transparent;
+    background: transparent;
   }
 
   .childImg{
@@ -1238,6 +1268,14 @@ td{
   .details h2 {
     font-size: 7px;
     margin-right: 8px;
+  }
+
+  .return-policy h1{
+    font-size: 20px;
+  }
+
+  .instruction-container h1{
+    font-size: 20px;
   }
 }
 
