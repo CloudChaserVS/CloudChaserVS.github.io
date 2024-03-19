@@ -79,7 +79,8 @@ header {
 }
 
 .downloadBtn {
-  margin-top: 25px;
+  text-align: center;
+  margin-top: 15px;
   transition: 0.5s;
   background-color: #1877F2;
   color: white;
@@ -89,8 +90,8 @@ header {
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .red-text {
@@ -365,16 +366,16 @@ header {
 }
 
 .flex-container h1 {
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .flex-container p {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .flex-item {
   box-shadow: 5px 5px 10px gray;
-  max-width: 358px;
+  max-width: 300px;
   background-color: #f1f1f1;
   padding: 10px;
   flex: 30%;
@@ -422,11 +423,6 @@ header {
   color: black;
 } 
 
-.flex-item li{
-  font-size: 16px;
-  list-style-type: disc;
-}
-
 .technologies {
   display: flex;
   flex-wrap: wrap;
@@ -437,12 +433,11 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 80px;
 }
 
-.technologies h2 {
-  font-size: 16px;
-  margin-right: 8px;
+.work-experience {
+  margin-bottom: 30px;
 }
 
 .work-experience hr{
@@ -584,6 +579,8 @@ td{
 .made-with-love a:hover {
   text-decoration: underline;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -742,12 +739,12 @@ td{
 
 .details img {
   border-radius: 7.5px;
-  width: 30px;
+  width: 15px;
   margin-right: 2px;
 }
 
 .details h2 {
-  font-size: 12px;
+  font-size: 10px;
   margin-right: 8px;
 }
 
@@ -819,7 +816,7 @@ td{
 
   .details img {
     border-radius: 7.5px;
-    width: 17px;
+    width: 13px;
     margin-right: 2px;
   }
   
@@ -838,7 +835,7 @@ td{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 120px;
+    width: 60px;
   }
   
   .technologies h2 {
@@ -864,14 +861,6 @@ td{
 
   .inTouch i {
     font-size: 50px;
-  }
-
-  .flex-item h1{
-    font-size: 15px;
-  }
-
-  .flex-item p, .flex-item a, .flex-item li {
-    font-size: 10px;
   }
 
   .seeWorks {
@@ -913,9 +902,26 @@ td{
   .slideshow-container {
     margin: auto;
   }
+
+  .black-inventory h1 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 870px) {
+
+  .black-inventory h1 {
+    font-size: 20px;
+  }
+
+  .open-black-inventory:hover  {
+    background-color: #DAD2BD;
+    color: #2D3134;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
 
   .open-black-inventory {
     font-size: 12px;
@@ -1158,8 +1164,13 @@ td{
     cursor: pointer;
   }
 
+  .flex-item{
+    max-width: 200px;
+    max-height: auto;
+  }
+
   .flex-item h1 {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .flex-item p, .flex-item a, .flex-item li {
