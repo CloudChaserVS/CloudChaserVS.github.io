@@ -216,7 +216,11 @@ header {
 }
 
 .helloContainer .course {
-  margin-top: -100px;
+  margin-left: 20px;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: -90px;
+  margin-bottom: 100px;
 }
 
 .helloContainer .welcome {
@@ -1271,8 +1275,12 @@ td{
     font-size: 70px;
   }
 
-  .mainContainer .course {
-    font-size: 25px;
+  .helloContainer .course {
+    margin-left: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: -65px;
+    margin-bottom: 100px;
   }
 
   .helloContainer {
