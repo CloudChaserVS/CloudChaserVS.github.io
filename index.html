@@ -157,28 +157,27 @@
 
         // AGE VALIDATION
         document.addEventListener("DOMContentLoaded", function() {
-        var modal = document.getElementById("myModal");
-        var yesBtn = document.getElementById("yesBtn");
-        var noBtn = document.getElementById("noBtn");
+  var modal = document.getElementById("myModal");
+  var yesBtn = document.getElementById("yesBtn");
+  var noBtn = document.getElementById("noBtn");
 
-        // Check if the user has already confirmed their age
-        var ageConfirmed = localStorage.getItem("ageConfirmed");
-        if (ageConfirmed) {
-            modal.style.display = "none";
-        } else {
-            modal.style.display = "block";
-        }
+  modal.style.display = "block";
 
-        yesBtn.onclick = function() {
-            // Set the ageConfirmed flag in local storage
-            localStorage.setItem("ageConfirmed", true);
-            modal.style.display = "none";
-        }
+  yesBtn.onclick = function() {
+    modal.style.display = "none";
+  }
 
-        noBtn.onclick = function() {
-            window.location.href = "https://www.google.com";
-        }
-        });
+  noBtn.onclick = function() {
+    window.location.href = "https://www.google.com";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+
 
         
     </script>
