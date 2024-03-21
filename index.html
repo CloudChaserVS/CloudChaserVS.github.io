@@ -24,6 +24,18 @@
             </div>
         </div>
 
+        <!-- AGE VALIDATION -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <h2>Age Verification</h2>
+              <h3>Adults only (18+)</h3>
+              <p> Some of our products may contain nicotine.
+                Nicotine is addictive. Minors are strictly prohibited from entering this website.You must be of legal minimum age to purchase our products.</p>
+              <button id="yesBtn">Yes, I am of legal age</button>
+              <button id="noBtn">No</button>
+            </div>
+        </div>
+
         <!-- DROPDOWN MENU -->
         <div class="dropDownMenu">
             <li><a href="index.html">Home</a></li>
@@ -55,13 +67,11 @@
         <section class="child">
             <h1 class="aboutTitle">About Us</h1>
             <h1 class="workTitle">E-Cigarette Shop</h1>
-            <li>
-                <p>
-                    <strong><u>Located at:</u></strong> <br>
-                    📍 228, Palayan Street, Cut-cot, Pulilan, Bulacan, North Luzon, 3005<br>
-                    📍 522, Purok 4, Pambuan, Gapan, Nueva Ecija, North Luzon, 3105 
-                </p>
-            </li>
+            <p>
+                <strong><u>Located at:</u></strong> <br>
+                📍 228, Palayan Street, Cut-cot, Pulilan, Bulacan, North Luzon, 3005<br>
+                📍 522, Purok 4, Pambuan, Gapan, Nueva Ecija, North Luzon, 3105 
+            </p>
             <p>
                 We've got awesome bundle deals just waiting for you! Take your pick from loads of delicious flavors – there's something for everyone! Best part? We offer <strong>FREE</strong> delivery right to your door anywhere in Pulilan, Bulacan, ensuring convenience at its finest, subject to meeting certain conditions. We are also accepting bulk/wholesale orders.
             </p>
@@ -74,20 +84,14 @@
                 <i class="fa-solid fa-hand-point-right"></i>
                 CHECK DEALS & DELIVERY RULES
             </a>
-            <h1 class="inTouch">Contact us:
-                <p class="email">0976 572 9171</p>
-                <p class="email">0906 031 2177</p>
-                <a 
-                href="https://www.facebook.com/2023CloudChaser"
-                target="_blank">
+            <p>
+                <strong><u>Contact us:</u></strong> <br>
+                0976 572 9171<br>
+                0906 031 2177<br>
+                <a href="https://www.facebook.com/2023CloudChaser" target="_blank" class="socmed-icons">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <!-- <a
-                href="https://github.com/Kitchen-Nuggets"
-                target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a> -->
-            </h1>
+            </p>
         </section>
     </div>
 
@@ -127,6 +131,8 @@
         </p>
     </div>
 
+    
+    <!-- FOOTER -->
     <div class="footer">
         <a>by Cloud Chaser </a>
         <div class="icons">
@@ -148,6 +154,37 @@
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
         }
+
+        // AGE VALIDATION
+        document.addEventListener("DOMContentLoaded", function() {
+        var modal = document.getElementById("myModal");
+        var yesBtn = document.getElementById("yesBtn");
+        var noBtn = document.getElementById("noBtn");
+
+        // Check if the modal has already been displayed in the current session
+        var modalDisplayed = sessionStorage.getItem("modalDisplayed");
+
+        // If the modal has not been displayed in the current session, display it
+        if (!modalDisplayed) {
+            modal.style.display = "block";
+            sessionStorage.setItem("modalDisplayed", true);
+        }
+
+        yesBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        noBtn.onclick = function() {
+            window.location.href = "https://www.google.com";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+        });
+        
     </script>
 </body>
 </html>
