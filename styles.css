@@ -148,6 +148,74 @@ header {
   color: grey;
 }
 
+/* AGE VALIDATION */
+.modal {
+  text-align: center;
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #555555;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-content {
+  box-shadow: 1px 1px 15px black;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.modal-content h2, h3{
+  font-size: 20px;
+}
+
+.modal-content p{
+  font-size: 17px;
+}
+
+button {
+  font-size: 17px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button#yesBtn {
+  border-radius: 15px;
+  background-color: #4ED964;
+  color: white;
+}
+
+button#yesBtn:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: transparent;
+}
+
+button#noBtn {
+  border-radius: 15px;
+  background-color: #FF3A31;
+  color: white;
+}
+
+button#noBtn:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: transparent;
+}
+
 /* DROPDOWN */
 .dropDownMenu {
   display: none;
@@ -888,6 +956,22 @@ td{
 /* RESPONSIVENESS */
 @media (max-width: 1280px) {
 
+  .modal-content {
+    width: 60%;
+  }
+  
+  .modal-content h2, h3{
+    font-size: 18px;
+  }
+  
+  .modal-content p{
+    font-size: 15px;
+  }
+  
+  button {
+    font-size: 15px;
+  }
+
   .bundle-deals p{
     font-size: 15px;
   }
@@ -1066,8 +1150,20 @@ td{
 
 @media (max-width: 870px) {
 
-  body{
-    -webkit-text-size-adjust: 100%;
+  .modal-content {
+    width: 80%;
+  }
+  
+  .modal-content h2, h3{
+    font-size: 16px;
+  }
+  
+  .modal-content p{
+    font-size: 13px;
+  }
+  
+  button {
+    font-size: 13px;
   }
 
   .return-policy {
@@ -1566,49 +1662,5 @@ img {
   }
 }
   
-/* AGE VALIDATION */
-.modal {
-  text-align: center;
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: none;
-}
-
-button#yesBtn {
-  background-color: green;
-  color: white;
-  border: none;
-}
-
-button#noBtn {
-  background-color: red;
-  color: white;
-  border: none;
-}
   
