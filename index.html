@@ -161,17 +161,8 @@
         var yesBtn = document.getElementById("yesBtn");
         var noBtn = document.getElementById("noBtn");
 
-        // Check if the user has visited the website before
-        var visitedBefore = localStorage.getItem("visitedBefore");
-
-        // If it's the user's first visit, show the modal
-        if (!visitedBefore) {
-            modal.style.display = "block";
-            localStorage.setItem("visitedBefore", true);
-        } else {
-            // If the user has visited before, show the main content directly
-            mainContent.style.display = "block";
-        }
+        // Display the modal when the page is loaded
+        modal.style.display = "block";
 
         yesBtn.onclick = function() {
             modal.style.display = "none";
@@ -179,6 +170,12 @@
 
         noBtn.onclick = function() {
             window.location.href = "https://www.google.com";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
         }
         });
         
