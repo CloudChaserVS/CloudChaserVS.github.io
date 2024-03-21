@@ -161,24 +161,20 @@
         var yesBtn = document.getElementById("yesBtn");
         var noBtn = document.getElementById("noBtn");
 
-        // Check if the age has been confirmed
-        var ageConfirmed = localStorage.getItem("ageConfirmed");
-        var modalDisplayed = localStorage.getItem("modalDisplayed");
+        // Check if the user has visited the website before
+        var visitedBefore = localStorage.getItem("visitedBefore");
 
-        // If age has been confirmed or modal already displayed, show main content
-        if (ageConfirmed) {
-            mainContent.style.display = "block";
-        } else {
-            if (!modalDisplayed) {
+        // If it's the user's first visit, show the modal
+        if (!visitedBefore) {
             modal.style.display = "block";
-            localStorage.setItem("modalDisplayed", true);
-            }
+            localStorage.setItem("visitedBefore", true);
+        } else {
+            // If the user has visited before, show the main content directly
+            mainContent.style.display = "block";
         }
 
         yesBtn.onclick = function() {
-            localStorage.setItem("ageConfirmed", true);
             modal.style.display = "none";
-            mainContent.style.display = "block";
         }
 
         noBtn.onclick = function() {
