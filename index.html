@@ -158,20 +158,21 @@
         // AGE VALIDATION
         document.addEventListener("DOMContentLoaded", function() {
         var modal = document.getElementById("myModal");
-        var mainContent = document.getElementById("mainContent");
         var yesBtn = document.getElementById("yesBtn");
         var noBtn = document.getElementById("noBtn");
 
         // Check if the age has been confirmed
         var ageConfirmed = localStorage.getItem("ageConfirmed");
-        var modalDisplayed = sessionStorage.getItem("modalDisplayed");
+        var modalDisplayed = localStorage.getItem("modalDisplayed");
 
-        // If age has been confirmed or modal already displayed in this session, show main content
-        if (ageConfirmed || modalDisplayed) {
+        // If age has been confirmed or modal already displayed, show main content
+        if (ageConfirmed) {
             mainContent.style.display = "block";
         } else {
+            if (!modalDisplayed) {
             modal.style.display = "block";
-            sessionStorage.setItem("modalDisplayed", true);
+            localStorage.setItem("modalDisplayed", true);
+            }
         }
 
         yesBtn.onclick = function() {
