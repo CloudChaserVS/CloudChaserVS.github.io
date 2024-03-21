@@ -164,6 +164,15 @@
         // Check if the modal has already been displayed in the current session
         var modalDisplayed = sessionStorage.getItem("modalDisplayed");
 
+        var ageConfirmed = localStorage.getItem("ageConfirmed");
+
+        // If age has been confirmed, show main content
+        if (ageConfirmed) {
+            modal.style.display = "none";
+        } else {
+            modal.style.display = "block";
+        }
+
         // If the modal has not been displayed in the current session, display it
         if (!modalDisplayed) {
             modal.style.display = "block";

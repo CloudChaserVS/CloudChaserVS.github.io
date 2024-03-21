@@ -1568,6 +1568,7 @@ img {
   
 /* AGE VALIDATION */
 .modal {
+  text-align: center;
   display: none; 
   position: fixed; 
   z-index: 1; 
