@@ -24,6 +24,18 @@
             </div>
         </div>
 
+        <!-- AGE VALIDATION -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <h2>AGE VERIFICATION</h2>
+              <h3>Adults only (<span class="red-text"><strong>18+</strong></span>)</h3>
+              <p> Some of our products may contain nicotine.
+                Nicotine is addictive. Minors are strictly prohibited from entering this website.You must be of legal minimum age to purchase our products.</p>
+              <button id="yesBtn">Yes, I am of legal age</button>
+              <button id="noBtn">No</button>
+            </div>
+        </div>
+
         <div class="dropDownMenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Discount & Delivery</a></li>
@@ -685,19 +697,7 @@
         </div>
     </div>
 
-    <script>
-        const toggleBtn = document.querySelector('.toggleBtn');
-        const toggleBtnIcon = document.querySelector('.toggleBtn i');
-        const dropDownMenu = document.querySelector('.dropDownMenu');
-        
-        toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')  
-
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-        }
-    </script>
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>

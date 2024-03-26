@@ -6,30 +6,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Images/CloudChaserLogo.png">
-    <title>Cloud Chaser | Discounted Deals</title>
+    <title>Cloud Chaser | Discounted Deals</title> 
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <img src="Logo.png"/>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Discount & Delivery</a></li>
-                <li><a href="projects.html">Products</a></li>
-            </ul>
+          <div class="navbar">
+              <img src="Logo.png"/>
+              <ul class="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="blog.html">Discount & Delivery</a></li>
+                  <li><a href="projects.html">Products</a></li>
+              </ul>
 
-            <a href="https://www.facebook.com/2023CloudChaser" class="downloadBtn">MESSAGE US ON FACEBOOK</a>
-            <div class="toggleBtn">
-                <i class="fa-solid fa-bars"></i>
+              <a href="https://www.facebook.com/2023CloudChaser" class="downloadBtn">MESSAGE US ON FACEBOOK</a>
+              <div class="toggleBtn">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+          </div>
+
+          <!-- AGE VALIDATION -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <h2>AGE VERIFICATION</h2>
+              <h3>Adults only (<span class="red-text"><strong>18+</strong></span>)</h3>
+              <p> Some of our products may contain nicotine.
+                Nicotine is addictive. Minors are strictly prohibited from entering this website.You must be of legal minimum age to purchase our products.</p>
+              <button id="yesBtn">Yes, I am of legal age</button>
+              <button id="noBtn">No</button>
             </div>
-        </div>
+          </div>
 
-        <div class="dropDownMenu">
+          <div class="dropDownMenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Discount & Delivery</a></li>
             <li><a href="projects.html">Products</a></li>
             <li><a href="https://www.facebook.com/2023CloudChaser" class="downloadBtn">MESSAGE US ON FACEBOOK</a></li>
-        </div>
+          </div>
     </header>
 
     <!-- SLIDE SHOW -->
@@ -141,58 +153,7 @@
       </div>
     </div>
 
-    <script>
-        const toggleBtn = document.querySelector('.toggleBtn');
-        const toggleBtnIcon = document.querySelector('.toggleBtn i');
-        const dropDownMenu = document.querySelector('.dropDownMenu');
-        
-        toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')  
-
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-        }
-
-        let slideIndex = 0;
-        let timeoutId = null;
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-        
-        showSlides();
-        function currentSlide(index) {
-            slideIndex = index;
-            showSlides();
-        }
-        function plusSlides(step) {
-            
-            if(step < 0) {
-                slideIndex -= 2;
-                
-                if(slideIndex < 0) {
-                slideIndex = slides.length - 1;
-                }
-            }
-            
-            showSlides();
-        }
-        function showSlides() {
-            for(let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            dots[i].classList.remove('active');
-            }
-            slideIndex++;
-            if(slideIndex > slides.length) {
-            slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].classList.add('active');
-            if(timeoutId) {
-                clearTimeout(timeoutId);
-            }
-            timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-        }
-    </script>
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>
