@@ -1669,12 +1669,48 @@ img {
   }
 }
 
-@media (max-height: 816px) {
+@media (max-height: 817px){
   .aboutMe {
-  
-    background: linear-gradient(to right, #ffffff 0%, #DAD2BD 100%);
+    background: transparent;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    min-height: 816px;
+    height: 100%;
+  }
+
+  .child {
+    color: white;
+  }
+
+  .child i {
+    color: lightgray;
+  }
+
+  .seeWorks {
+    background-color: white;
+    color: black;
+  }
+
+  .seeWorks:hover {
+    border: none;
+    background-color: white;
+    color: black;
+    margin: auto;
+  }
+
+  .seeWorks i {
+    color: black;
+  }
+
+  .aboutMe hr{
+    margin-top: 70px;
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+  }
+
+  .aboutMe img {
+    border-radius: 50%;
+    border: 3px solid white;
   }
 }
 
