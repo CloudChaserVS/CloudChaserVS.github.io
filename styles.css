@@ -1668,6 +1668,17 @@ img {
     opacity: 1
   }
 }
+
+@media (max-height: 816px) {
+  .aboutMe {
+  
+    background: linear-gradient(to right, #ffffff 0%, #DAD2BD 100%);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 816px;
+  }
+}
+
+
   
 
   
