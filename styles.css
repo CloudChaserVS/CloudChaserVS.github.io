@@ -537,6 +537,12 @@ button#noBtn:hover {
   margin-bottom: -70px;
 }
 
+.work-experience a:hover{
+  transition: 0.5s;;
+  color: skyblue;
+  cursor: pointer;
+}
+
 .openUrlProjBtn:hover {
   transition: 0.5s;
   margin-left: 20px;
