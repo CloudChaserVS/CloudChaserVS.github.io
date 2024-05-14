@@ -553,7 +553,7 @@ button#noBtn:hover {
 
 .work-experience a:hover{
   transition: 0.5s;;
-  color: blue;
+  color: #1877F2;
   cursor: pointer;
 }
 
@@ -1602,6 +1602,12 @@ td{
   
   .icons a:hover {
     transition: 0.8s;
+  }
+
+  .work-experience a:hover{
+    transition: 0.5s;;
+    color: white;
+    cursor: pointer;
   }
 }
 
