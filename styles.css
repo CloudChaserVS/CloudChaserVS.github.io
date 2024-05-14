@@ -16,11 +16,17 @@ hr {
 
 body {
   height: 100vh;
-  background-color: #000;
+  background-color: black;
+  /* background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center; */
+  margin: 0
+}
+
+.footer {
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
-  margin: 0
 }
 
 li {
@@ -703,7 +709,6 @@ button#noBtn:hover {
 .bundle-deals h1{
   font-size: 30px;
   color: #fff;
-  text-transform: uppercase;
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
@@ -728,7 +733,6 @@ th{
   font-weight: 500;
   font-size: 18px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 td{
